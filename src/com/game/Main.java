@@ -1,5 +1,14 @@
 package com.game;
 
-public class Main {
+class Player {
+    String nama;
+    int level;
+    double helath;
+
+
+    Player (String ama, int level, double helath){
+        
+    }
+
     
 }

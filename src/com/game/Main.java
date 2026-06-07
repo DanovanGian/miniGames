@@ -10,6 +10,17 @@ class Player {
         this.level =level;
         this.helath = helath;
     }
+}
 
-    
+class Weapon {
+    String nama;
+    int level;
+    double power;
+
+    Weapon (String nama, int level, double power){
+        this.nama = nama;
+        this. level = level;
+        this.power = power;
+        
+    }
 }

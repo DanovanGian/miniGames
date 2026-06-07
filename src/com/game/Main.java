@@ -21,6 +21,18 @@ class Weapon {
         this.nama = nama;
         this. level = level;
         this.power = power;
-        
+
+    }
+}
+
+class Arrmor {
+    String nama;
+    int level;
+    double defense;
+
+    Arrmor (String nama, int level, double defense){
+        this.nama = nama;
+        this.level = level; 
+        this.defense = defense;
     }
 }

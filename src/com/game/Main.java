@@ -1,5 +1,6 @@
 package com.game;
 
+
 class Player {
     String nama;
     int level;
@@ -36,3 +37,12 @@ class Arrmor {
         this.defense = defense;
     }
 }
+
+public class Main {
+
+    public static void main(String[] args) {
+        Player Player1 = new Player("gian", 15, 98);
+    }
+}
+
+

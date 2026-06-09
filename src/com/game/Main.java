@@ -20,6 +20,14 @@ class Player {
     void pakaiArrmor(Arrmor arrmor){
         this.arrmor = arrmor;
     }
+
+    void ShowPlayer(){
+        System.out.println("Usermane : " + this.nama);
+        System.out.println("Level    : " + this.level);
+        
+
+
+    }
 }
 //class untuk senjata 
 class Weapon {
@@ -33,9 +41,9 @@ class Weapon {
         this.power = power;
 
     }
-
-    void show(){
-        System.out.println("Nama Senjata : " + this.nama);
+    //method untuk menampilkan data senjata 
+    void ShowWeapon(){
+        System.out.println("Nama Senjata  : " + this.nama);
         System.out.println("Level Senjata : " + this.level);
         System.out.println("Power Senjata : " + this.power);
 
@@ -52,6 +60,12 @@ class Arrmor {
         this.level = level; 
         this.defense = defense;
     }
+    //method untuk menampilkan data arrmor 
+    void ShowArrmor(){
+        System.out.println("Nama Arrmor     : " + this.nama);
+        System.out.println("Level Arrmor    : " + this.level);
+        System.out.println("Defense Arrmor  : " + this.defense);
+    }
 }
 
 public class Main {
@@ -65,10 +79,17 @@ public class Main {
         //object senjata 1
         Weapon Senjata1 = new Weapon ("Diamond Sword", 2, 25);
 
-        //pemain pakai senjata
+
         Pemain1.pakaiSenjata(Senjata1);
 
-        Pemain1.senjata.show();
+        //memenggil method yang menampilkan data 
+        Pemain1.ShowPlayer();
+        System.out.println("\n");
+        Senjata1.ShowWeapon();
+        System.out.println("\n");
+        Arrmor1.ShowArrmor();
+
+        Pemain1.pakaiArrmor(Arrmor1);
 
     }
 }

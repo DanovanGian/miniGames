@@ -14,18 +14,27 @@ class Player {
         this.level =level;
         this.helath = helath;
     }
+    
     void pakaiSenjata(Weapon senjata){
         this.senjata = senjata;
     }
+    
     void pakaiArrmor(Arrmor arrmor){
         this.arrmor = arrmor;
     }
 
     void ShowPlayer(){
+        System.out.println("====================");
+        System.out.println("* STATISTIK PLAYER *");
+        System.out.println("====================");
         System.out.println("Usermane : " + this.nama);
         System.out.println("Level    : " + this.level);
-        
-
+        System.out.println("Health    : " + this.helath + " hp");
+        System.out.println("\n");
+        this.arrmor.ShowArrmor();
+        System.out.println("\n");
+        this.senjata.ShowWeapon();
+        System.out.println("====================");
 
     }
 }
@@ -37,7 +46,7 @@ class Weapon {
 
     Weapon (String nama, int level, double power){
         this.nama = nama;
-        this. level = level;
+        this.level = level;
         this.power = power;
 
     }
@@ -73,23 +82,19 @@ public class Main {
     public static void main(String[] args) {
 
         //object pemain 1
-        Player Pemain1 = new Player("Gian Danovan", 15, 98);
+        Player Pemain1 = new Player("Gian Danovan", 1, 98);
         //obect Arrmor 1
         Arrmor Arrmor1 = new Arrmor("Diamond Helmet", 2, 200);
         //object senjata 1
         Weapon Senjata1 = new Weapon ("Diamond Sword", 2, 25);
 
-
+        //
         Pemain1.pakaiSenjata(Senjata1);
+        Pemain1.pakaiArrmor(Arrmor1);
 
         //memenggil method yang menampilkan data 
         Pemain1.ShowPlayer();
         System.out.println("\n");
-        Senjata1.ShowWeapon();
-        System.out.println("\n");
-        Arrmor1.ShowArrmor();
-
-        Pemain1.pakaiArrmor(Arrmor1);
 
     }
 }

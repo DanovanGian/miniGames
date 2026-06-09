@@ -42,19 +42,19 @@ class Player {
 class Weapon {
     String nama;
     int level;
-    double power;
+    double Damage;
 
     Weapon (String nama, int level, double power){
         this.nama = nama;
         this.level = level;
-        this.power = power;
+        this.Damage = power;
 
     }
     //method untuk menampilkan data senjata 
     void ShowWeapon(){
         System.out.println("Nama Senjata  : " + this.nama);
         System.out.println("Level Senjata : " + this.level);
-        System.out.println("Power Senjata : " + this.power);
+        System.out.println("Damage Senjata : " + this.Damage);
 
     }
 }
@@ -105,12 +105,12 @@ public class Main {
         Player1.pakaiArrmor(DiamondHelmet);
 
         //Player2 Atribut pakai
-        Player1.pakaiSenjata(Ketapel);
-        Player1.pakaiArrmor(DiamondHelmet);
+        Player2.pakaiSenjata(Ketapel);
+        Player2.pakaiArrmor(DiamondHelmet);
 
         //Player2 Atribut pakai
-        Player1.pakaiSenjata(Kerikil);
-        Player1.pakaiArrmor(BajuKulit);
+        Player3.pakaiSenjata(Kerikil);
+        Player3.pakaiArrmor(BajuKulit);
 
         //memenggil method yang menampilkan data 
         Player1.ShowPlayer();

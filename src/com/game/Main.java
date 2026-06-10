@@ -23,6 +23,16 @@ class Player {
         this.arrmor = arrmor;
     }
 
+    void Serangan(Player musuh){
+        System.out.println(this.nama + "Menyerang" + musuh.nama );
+
+    }
+
+    void impact(Weapon Damage){
+        System.out.println();
+    }
+
+
     void ShowPlayer(){
         System.out.println("====================");
         System.out.println("* STATISTIK PLAYER *");
@@ -75,6 +85,8 @@ class Arrmor {
         System.out.println("Level Arrmor    : " + this.level);
         System.out.println("Defense Arrmor  : " + this.defense);
     }
+
+
 }
 
 public class Main {

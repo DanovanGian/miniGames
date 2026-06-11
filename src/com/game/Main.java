@@ -24,12 +24,13 @@ class Player {
     }
 
     void Serangan(Player musuh){
-        System.out.println(this.nama + "Menyerang" + musuh.nama );
+        System.out.println(this.nama + " Menyerang " + musuh.nama );
+        System.out.println("\n");
 
     }
 
-    void impact(Weapon Damage){
-        System.out.println();
+    void impact(Player musuh, Weapon Damage){
+        System.out.println( musuh.nama + " menerima serangan sebesar " + Damage.Damage);
     }
 
 
@@ -98,8 +99,6 @@ public class Main {
         Player Player2 = new Player("Steve", 5,100);
         Player Player3 = new Player("Nicholas", 10,50);
 
-
-
         //object senjata 
         Weapon DiamondSword = new Weapon ("Diamond Sword", 2, 250);
         Weapon Panah = new Weapon ("Panah", 2, 50);
@@ -110,7 +109,6 @@ public class Main {
         Arrmor BajuKulit = new Arrmor("Baju Kulit", 2, 50);
         Arrmor BajuBesi = new Arrmor("Baju Besi", 2, 100);
         Arrmor BaJuEmas = new Arrmor("Baju Emas", 2, 150);
-       
 
         //Player1 Atribut pakai
         Player1.pakaiSenjata(DiamondSword);
@@ -131,8 +129,8 @@ public class Main {
         Player2.ShowPlayer();
         System.out.println("\n");
 
-        Player3.ShowPlayer();
-        System.out.println("\n");
+       Player1.Serangan(Player2);
+       Player1.impact(Player2, DiamondSword);
 
     }
 }

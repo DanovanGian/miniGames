@@ -29,7 +29,7 @@ public class Main {
         Player3.pakaiSenjata(Kerikil);
         Player3.pakaiArmor(BaJuEmas);
         //Player4 Atribut pakai
-        Player4.pakaiSenjata(Ketapel);
+        
     
         // memenggil method yang menampilkan data
         Player1.ShowPlayer();

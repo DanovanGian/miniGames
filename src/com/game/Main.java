@@ -29,6 +29,8 @@ public class Main {
         Player3.pakaiSenjata(Kerikil);
         Player3.pakaiArmor(BaJuEmas);
         //Player4 Atribut pakai
+        Player4.pakaiSenjata(Ketapel);
+        Player4.pakaiArmor(BajuBesi);
         
     
         // memenggil method yang menampilkan data

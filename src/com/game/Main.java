@@ -8,6 +8,7 @@ public class Main {
         Player Player1 = new Player("Gian Danovan", 1, 100);
         Player Player2 = new Player("Steve", 5, 100);
         Player Player3 = new Player("Nicholas", 10, 100);
+        Player Player4 = new Player ("alex", 3, 100);
         // object senjata
         Weapon DiamondSword = new Weapon("Diamond Sword", 2, 75);
         Weapon Panah = new Weapon("Panah", 2, 50);

@@ -9,15 +9,15 @@ public class Main {
         Player Player2 = new Player("Steve", 5, 100);
         Player Player3 = new Player("Nicholas", 10, 100);
         // object senjata
-        Weapon DiamondSword = new Weapon("Diamond Sword", 2, 25);
-        Weapon Panah = new Weapon("Panah", 2, 15);
+        Weapon DiamondSword = new Weapon("Diamond Sword", 2, 75);
+        Weapon Panah = new Weapon("Panah", 2, 50);
         Weapon Kerikil = new Weapon("Kerikil", 1, 5);
         Weapon Ketapel = new Weapon("Ketapel", 3, 10);
         // obect Armor
-        Armor DiamondHelmet = new Armor("Diamond Helmet", 2, 100);
+        Armor DiamondHelmet = new Armor("Diamond Helmet", 2, 50);
         Armor BajuKulit = new Armor("Baju Kulit", 2, 25);
-        Armor BajuBesi = new Armor("Baju Besi", 2, 50);
-        Armor BaJuEmas = new Armor("Baju Emas", 2, 75);
+        Armor BajuBesi = new Armor("Baju Besi", 2, 40);
+        Armor BaJuEmas = new Armor("Baju Emas", 2, 45);
 
         // Player1 Atribut pakai
         Player1.pakaiSenjata(DiamondSword);
@@ -27,7 +27,9 @@ public class Main {
         Player2.pakaiArmor(BajuKulit);
         // Player3 Atribut pakai
         Player3.pakaiSenjata(Kerikil);
-        Player3.pakaiArmor(BajuKulit);
+        Player3.pakaiArmor(BaJuEmas);
+        //Player4 Atribut pakai
+        Player4.pakaiSenjata()
 
         // memenggil method yang menampilkan data
         Player1.ShowPlayer();
@@ -35,8 +37,12 @@ public class Main {
         Player2.ShowPlayer();
 
         // fitur bertempur
+        
         System.out.println("\nPERTEMPURAN DI MULAI!! \n");
-        Player1.Serangan(Player2);s
+
+        Player1.Serangan(Player2);
+
+
 
     
 

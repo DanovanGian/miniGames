@@ -30,12 +30,12 @@ public class Main {
         Player3.pakaiSenjata(Kerikil);
         Player3.pakaiArmor(BaJuEmas);
         //Player4 Atribut pakai
-        Player4.pakaiSenjata(Ketapel);
+        Player4.pakaiSenjata(Panah);
         Player4.pakaiArmor(BajuBesi);
         
     
         // memenggil method yang menampilkan data
-        Player1.ShowPlayer();
+        Player3.ShowPlayer();
         System.out.println("\n");
         Player2.ShowPlayer();
 
@@ -43,7 +43,9 @@ public class Main {
         
         System.out.println("\nPERTEMPURAN DI MULAI!! \n");
 
-        Player1.Serangan(Player2);
+        Player3.Serangan(Player2);
+
+
 
 
 

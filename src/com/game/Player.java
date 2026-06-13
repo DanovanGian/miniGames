@@ -24,21 +24,26 @@ public class Player {
 
     void Serangan(Player musuh) {
 
-        System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + this.senjata.Damage);
+        System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + this.senjata.Damage );
         System.out.println("\n");
         musuh.defance(this.senjata.Damage);
 
     }
 
     void defance(double attackPower) {
+        /*sya mau jika damage   yang di berikan itu lebih besar dari
+        armor milik si lawan maka health akan di kurangi dengan damage yang di terima 
+         */
         double damage;
 
         if (attackPower > this.armor.defense) {
-            damage = health - attackPower;
+            damage = attackPower - health;
         } else {
             damage = 0;
         }
         System.out.println(this.nama + " menerima serangan sebesar " + damage);
+        System.out.println("sisa HP " + this.nama + " " + health);
+
     }
 
     void ShowPlayer() {

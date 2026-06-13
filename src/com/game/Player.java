@@ -27,6 +27,7 @@ public class Player {
         System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + this.senjata.Damage );
         System.out.println("\n");
         musuh.defance(this.senjata.Damage);
+        System.out.println("sisa HP " + musuh.nama + " " + health);
 
     }
 
@@ -42,7 +43,7 @@ public class Player {
             damage = 0;
         }
         System.out.println(this.nama + " menerima serangan sebesar " + damage);
-        System.out.println("sisa HP " + this.nama + " " + health);
+        
 
     }
 

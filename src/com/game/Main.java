@@ -35,7 +35,7 @@ public class Main {
         
     
         // memenggil method yang menampilkan data
-        Player3.ShowPlayer();
+        Player1.ShowPlayer();
         System.out.println("\n");
         Player2.ShowPlayer();
 
@@ -43,7 +43,7 @@ public class Main {
         
         System.out.println("\nPERTEMPURAN DI MULAI!! \n");
 
-        Player3.Serangan(Player2);
+        Player1.Serangan(Player2);
 
 
 

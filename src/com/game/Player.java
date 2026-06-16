@@ -38,7 +38,7 @@ public class Player {
             // ini ketika attack powernya lbih besar dibandingkan armornya powernya maka
             // arrmor langsung pecah dan habis
             if (sisaDamage >= this.armor.defense) {
-                sisaDamage = this.armor.defense - sisaDamage;
+                sisaDamage = sisaDamage - this.armor.defense;
                 System.out.println(this.nama + " Kehilangan Armor Sebesar " + this.armor.defense);
 
                 this.armor.defense = 0;
@@ -62,7 +62,7 @@ public class Player {
 
         }
         System.out.println("Sisa Armor Musuh " + this.armor.defense);
-        System.out.println("Sisa HP " + this.nama + this.health);
+        System.out.println("Sisa HP " + this.nama + " : " + this.health);
 
     }
 

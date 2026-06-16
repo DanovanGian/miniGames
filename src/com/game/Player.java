@@ -25,7 +25,6 @@ public class Player {
     void Serangan(Player musuh) {
 
         System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + this.senjata.Damage);
-        System.out.println("\n");
         musuh.defance(this.senjata.Damage);
 
     }
@@ -61,9 +60,9 @@ public class Player {
 
             sisaDamage = 0;
 
-            System.out.println("Sisa HP " + this.nama + this.health);
-
         }
+        System.out.println("Sisa Armor Musuh " + this.armor.defense);
+        System.out.println("Sisa HP " + this.nama + this.health);
 
     }
 

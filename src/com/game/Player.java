@@ -45,8 +45,8 @@ public class Player {
                 System.out.println(this.nama + " Kehilangan Armor Sebesar " + this.armor.defense);
 
                 this.armor.defence = 0;
-            // yang di bawah adalah ketika arrmor masih bisa melawan attack power berarti
-            // yang dimana bahwa armor masih lebih besar di banding attack power
+                // yang di bawah adalah ketika arrmor masih bisa melawan attack power berarti
+                // yang dimana bahwa armor masih lebih besar di banding attack power
             } else {
                 this.armor.defense = this.armor.defense - sisaDamage;
                 System.out.println(this.nama + " Armor Kehilangan Defnese Sebesar " + sisaDamage);
@@ -55,13 +55,11 @@ public class Player {
 
             }
         }
-        /*
-         * jika armor ada maka saerangan terlabih dahulu akan di terima oleh armor,
-         * jika armor tidak ada maka serangan akan langsung diterima oleh health
-         * dan juga jika damage itu lebih besar dari pada armor yang ada maka damage
-         * yang di hasilkan akan di alokasikan ke armor lalu ke health
-         */
+        //jika armor tidak ada maka damage akan langsung masuk ke health lawan
+        if(sisaDamage > 0){
 
+        }
+     
     }
 
     void ShowPlayer() {

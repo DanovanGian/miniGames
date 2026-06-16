@@ -34,7 +34,7 @@ public class Player {
     void defance(double attackPower) {
 
         double sisaDamage = attackPower;
-
+        
         // jika armor masih ada
         if (this.armor.defense > 0) {
 
@@ -44,12 +44,13 @@ public class Player {
                 sisaDamage = this.armor.defense - sisaDamage;
                 System.out.println(this.nama + " Kehilangan Armor Sebesar " + this.armor.defense);
 
-                this.armor.defence = 0;
+                this.armor.defense = 0;
+        
+            } else {
                 // yang di bawah adalah ketika arrmor masih bisa melawan attack power berarti
                 // yang dimana bahwa armor masih lebih besar di banding attack power
-            } else {
                 this.armor.defense = this.armor.defense - sisaDamage;
-                System.out.println(this.nama + " Armor Kehilangan Defnese Sebesar " + sisaDamage);
+                System.out.println(this.nama + " Armor Kehilangan Defense Sebesar " + sisaDamage);
 
                 sisaDamage = 0;
 
@@ -57,6 +58,10 @@ public class Player {
         }
         //jika armor tidak ada maka damage akan langsung masuk ke health lawan
         if(sisaDamage > 0){
+            this.health = this.health - sisaDamage;
+            System.out.println(this.nama + "Menerima Damage Langsung Sebesar " + health);
+            
+            sisaDamage = 0;
 
         }
      

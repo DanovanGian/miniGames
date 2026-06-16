@@ -27,30 +27,28 @@ public class Player {
         System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + this.senjata.Damage);
         System.out.println("\n");
         musuh.defance(this.senjata.Damage);
-        System.out.println("sisa HP " + musuh.nama + " " + health);
+        System.out.println("sisa HP " + musuh.nama + " " + this.health);
 
     }
 
     void defance(double attackPower) {
     
-        double sisaDamage;
-
+        double sisaDamage = attackPower;
+        
+        //jika armor masih ada 
         if (this.armor.defense > 0){
-             if (sisaDamage >= this.armor.defense) {
+             
+            if (sisaDamage >= this.armor.defense) {
+                sisaDamage = this.armor.defense - sisaDamage;
+                System.out.println("");
 
             // Damage lebih besar dari armor
-
-
+            }
+        }
         /*jika armor ada maka saerangan terlabih dahulu akan di terima oleh armor, 
         jika armor tidak ada maka serangan akan langsung diterima oleh health
         dan juga jika damage itu lebih besar dari pada armor yang ada maka damage yang di hasilkan akan di alokasikan ke armor lalu ke  health*/
-        if (attackPower > this.armor.defense) {
-            damage = health - attackPower;
-        } else {
-            damage = 0;
-        }
-        System.out.println(this.nama + " menerima serangan sebesar " + damage);
-
+        
     }
 
     void ShowPlayer() {

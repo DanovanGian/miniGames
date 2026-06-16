@@ -40,13 +40,7 @@ public class Player {
 
             // Damage lebih besar dari armor
 
-            sisaDamage -= this.armor.defense;
-            System.out.println(this.nama + " kehilangan armor sebesar "
-                    + this.armor.defense);
-            this.armor.defense = 0;
 
-        } else {
-        }
         /*jika armor ada maka saerangan terlabih dahulu akan di terima oleh armor, 
         jika armor tidak ada maka serangan akan langsung diterima oleh health
         dan juga jika damage itu lebih besar dari pada armor yang ada maka damage yang di hasilkan akan di alokasikan ke armor lalu ke  health*/

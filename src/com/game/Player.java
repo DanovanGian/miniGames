@@ -27,7 +27,6 @@ public class Player {
         System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + this.senjata.Damage);
         System.out.println("\n");
         musuh.defance(this.senjata.Damage);
-        System.out.println("sisa HP " + musuh.nama + " " + this.health);
 
     }
 
@@ -57,11 +56,13 @@ public class Player {
             }
         }
         //jika armor tidak ada maka damage akan langsung masuk ke health lawan
-        if(sisaDamage > 0){
+        if (sisaDamage > 0){
             this.health = this.health - sisaDamage;
-            System.out.println(this.nama + "Menerima Damage Langsung Sebesar " + health);
+            System.out.println(this.nama + "Menerima Damage Langsung Sebesar " + sisaDamage);
             
             sisaDamage = 0;
+
+            System.out.println("Sisa HP " + this.nama + this.health);
 
         }
      

@@ -43,12 +43,6 @@ public class Main {
         System.out.println("\nPERTEMPURAN DI MULAI!! \n");
 
         Player1.Serangan(Player2);
-
-
-
-
-
-    
-
+        
     }
 }

@@ -66,6 +66,7 @@ public class Player {
 
     }
 
+
     void ShowPlayer() {
         System.out.println("====================");
         System.out.println("* STATISTIK PLAYER *");

@@ -52,7 +52,7 @@ public class Main {
             }
             Player2.Serangan(Player1);
             if (Player1.health <= 0){
-                System.out.println("PE");
+                System.out.println("PEMENANGNYA ADALAH PLAYER 2!!");
             }
 
             

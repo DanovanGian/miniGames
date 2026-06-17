@@ -56,17 +56,16 @@ public class Player {
         // jika armor tidak ada maka damage akan langsung masuk ke health lawan
         if (sisaDamage > 0) {
             this.health = this.health - sisaDamage;
-            System.out.println(this.nama + "Menerima Damage Langsung Sebesar " + sisaDamage);
+            System.out.println(this.nama + " Menerima Damage Langsung Sebesar " + sisaDamage);
 
             sisaDamage = 0;
 
         }
-        System.out.println("Sisa Armor Musuh " + this.armor.defense);
+        System.out.println("Sisa Armor " + this.armor.defense);
         System.out.println("Sisa HP " + this.nama + " : " + this.health);
         System.out.println("\n");
 
     }
-
 
     void ShowPlayer() {
         System.out.println("====================");

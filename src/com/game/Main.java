@@ -55,7 +55,6 @@ public class Main {
             }
 
         }
-
         // System.out.println("SELANJUTNYA AKAN MENAMBAH FITUR SALING SERANG");
         // System.out.println("AKAN ADA PENYESUAIAN NILAI SERANGAN DAN DFENSE");
         // System.out.println("OKE DONE SELANJUTNYA AKAN SAYA TAMBAHKAN FITUR UNTUK

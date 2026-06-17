@@ -59,8 +59,10 @@ public class Player {
             System.out.println(this.nama + " Menerima Damage Langsung Sebesar " + sisaDamage);
 
             sisaDamage = 0;
+        
 
         }
+
         System.out.println("Sisa Armor " + this.armor.defense);
         System.out.println("Sisa HP " + this.nama + " : " + this.health);
         System.out.println("\n");

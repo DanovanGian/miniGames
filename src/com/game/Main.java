@@ -47,11 +47,13 @@ public class Main {
             Player1.Serangan(Player2);
             if (Player2.health <= 0) {
                 System.out.println("PEMENANGNYA ADALAH PLAYER 1!!");
+                break;
 
             }
             Player2.Serangan(Player1);
             if (Player1.health <= 0) {
                 System.out.println("PEMENANGNYA ADALAH PLAYER 2!!");
+                break;
             }
 
         }

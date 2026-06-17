@@ -46,8 +46,13 @@ public class Main {
 
         while (Player1.health > 0 && Player2.health > 0) {
             Player1.Serangan(Player2);
-            if (Player){
-
+            if (Player2.health <= 0){
+                System.out.println("PEMENANGNYA ADALAH PLAYER 1!!");
+            
+            }
+            Player2.Serangan(Player1);
+            if (Player1.health <= 0){
+                System.out.println("PE");
             }
 
             

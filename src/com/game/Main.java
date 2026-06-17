@@ -42,12 +42,17 @@ public class Main {
         // fitur bertempur
         System.out.println("\nPERTEMPURAN DI MULAI!! \n");
 
-        //fase 1
-        Player1.Serangan(Player2);
-        System.out.println("\n");
-        //fase 2
-        Player2.Serangan(Player1);
 
+
+        while (Player1.health > 0 && Player2.health > 0) {
+            Player1.Serangan(Player2);
+            if (Player){
+
+            }
+
+            
+        }
+       
         // System.out.println("SELANJUTNYA AKAN MENAMBAH FITUR SALING SERANG");
         // System.out.println("AKAN ADA PENYESUAIAN NILAI SERANGAN DAN DFENSE");
         // System.out.println("OKE DONE SELANJUTNYA AKAN SAYA TAMBAHKAN FITUR UNTUK MELAKUKAN PERANG TERUS MENERUS SAMPAI HP SALAH SATU PLAYER HABIS");

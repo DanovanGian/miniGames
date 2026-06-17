@@ -63,6 +63,7 @@ public class Player {
         }
         System.out.println("Sisa Armor Musuh " + this.armor.defense);
         System.out.println("Sisa HP " + this.nama + " : " + this.health);
+        System.out.println("\n");
 
     }
 

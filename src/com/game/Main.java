@@ -45,6 +45,7 @@ public class Main {
 
         while (Player1.health > 0 && Player2.health > 0) {
             Player1.Serangan(Player2);
+            Player2.ShowPlayer();
             if (Player2.health <= 0) {
                 System.out.println("PEMENANGNYA ADALAH PLAYER 1!!");
                 break;
@@ -57,10 +58,8 @@ public class Main {
             }
 
         }
-        // System.out.println("SELANJUTNYA AKAN MENAMBAH FITUR SALING SERANG");
-        // System.out.println("AKAN ADA PENYESUAIAN NILAI SERANGAN DAN DFENSE");
-        // System.out.println("OKE DONE SELANJUTNYA AKAN SAYA TAMBAHKAN FITUR UNTUK
-        // MELAKUKAN PERANG TERUS MENERUS SAMPAI HP SALAH SATU PLAYER HABIS");
+
+
 
     }
 }

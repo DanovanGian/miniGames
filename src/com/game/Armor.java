@@ -1,11 +1,11 @@
 package com.game;
 
 public class Armor {
-    String nama;
-    int level;
-    double defense;
+    private String nama;
+    private int level;
+    private double defense;
 
-    Armor(String nama, int level, double defense) {
+    public Armor(String nama, int level, double defense) {
         this.nama = nama;
         this.level = level;
         this.defense = defense;

@@ -1,14 +1,14 @@
 package com.game;
 
 public class Player {
-    String nama;
-    int level;
+    private String nama;
+    private int level;
     private double health;
 
     Weapon senjata;
     Armor armor;
 
-    Player(String nama, int level, double health) {
+    public Player(String nama, int level, double health) {
         this.nama = nama;
         this.level = level;
         this.health = health;

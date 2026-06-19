@@ -3,7 +3,7 @@ package com.game;
 public class Player {
     String nama;
     int level;
-    double health;
+    private double health;
 
     Weapon senjata;
     Armor armor;

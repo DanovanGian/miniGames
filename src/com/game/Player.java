@@ -14,6 +14,22 @@ public class Player {
         this.health = health;
     }
 
+    //getter 
+    public String getNama(){return nama;}
+    public int getLevel(){return level;}
+    public double getHealth(){return health;}
+
+    //setter
+    public void setNama(String nama){
+        this.nama = nama;
+    }
+    public void setLevel(int level){
+        this.level = level;
+    }
+    public void setHealth(double health){
+        this.health = health;
+    }
+
     void pakaiSenjata(Weapon senjata) {
         this.senjata = senjata;
     }

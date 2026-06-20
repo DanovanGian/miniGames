@@ -18,4 +18,23 @@ public class Armor {
         System.out.println("Defense Armor  : " + this.defense);
     }
 
+    // getter 
+    public String getShowArmor() { return nama; }
+    public int getlevel() { return level; }
+    public double getdefense() { return defense; }
+
+    //setter
+    public void setNama(String nama) {
+        this.nama = nama;
+
+    }
+    public void setLevel(int level) {
+        this.level = level;
+
+    }
+    public void setdefense(double defense) {
+        this.defense = defense;
+
+    }
+
 }

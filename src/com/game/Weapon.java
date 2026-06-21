@@ -21,17 +21,17 @@ public class Weapon {
     }
 
     //getter 
-    public String getNama(){ return nama; }
-    public int getLevel (){ return level; }
-    public double getDamage(){return damage;}
+    public String getnamaWeapon(){ return nama; }
+    public int getlevelWeapon (){ return level; }
+    public double getdamageWeapon(){return damage;}
     //setter 
-    public void setNama (String nama){
+    public void setnamaWeapon (String nama){
         this.nama = nama;
     }
-    public void setLevel(int level){
+    public void setlevelWeapon (int level){
         this.level = level;
     }
-    public void setDamage(double damage){
+    public void setdamageWeapon (double damage){
         this.damage = damage;
     }
     

@@ -19,20 +19,20 @@ public class Armor {
     }
 
     // getter 
-    public String getShowArmor() { return nama; }
-    public int getlevel() { return level; }
-    public double getdefense() { return defense; }
+    public String getnamaArmor() { return nama; }
+    public int getlevelArmor() { return level; }
+    public double getdefenseArmor() { return defense; }
 
     //setter
-    public void setNama(String nama) {
+    public void setnamaArmor(String nama) {
         this.nama = nama;
 
     }
-    public void setLevel(int level) {
+    public void setLevelArmor(int level) {
         this.level = level;
 
     }
-    public void setdefense(double defense) {
+    public void setdefenseArmor(double defense) {
         this.defense = defense;
 
     }

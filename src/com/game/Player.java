@@ -15,18 +15,18 @@ public class Player {
     }
 
     //getter 
-    public String getNama(){return nama;}
-    public int getLevel(){return level;}
-    public double getHealth(){return health;}
+    public String getnamaPlayer(){return nama;}
+    public int getlevelPlayer(){return level;}
+    public double gethealthPlayer(){return health;}
 
     //setter
-    public void setNama(String nama){
+    public void setnamaPlayer(String nama){
         this.nama = nama;
     }
-    public void setLevel(int level){
+    public void setlevelPlayer(int level){
         this.level = level;
     }
-    public void setHealth(double health){
+    public void sethealthPlayer(double health){
         this.health = health;
     }
 

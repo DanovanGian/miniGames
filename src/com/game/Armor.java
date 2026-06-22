@@ -28,7 +28,7 @@ public class Armor {
         this.nama = nama;
 
     }
-    public void setLevelArmor(int level) {
+    public void setlevelArmor(int level) {
         this.level = level;
 
     }

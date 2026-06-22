@@ -40,8 +40,8 @@ public class Player {
 
     void Serangan(Player musuh) {
 
-        System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + this.senjata.Damage);
-        musuh.defance(this.senjata.Damage);
+        System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + senjata.getdamageWeapon());
+        musuh.defance(this.senjata.getdamageWeapon());
 
     }
 
@@ -50,19 +50,19 @@ public class Player {
         double sisaDamage = attackPower;
 
         // jika armor masih ada
-        if (this.armor.defense > 0) {
+        if (armor.getdefenseArmor() > 0) {
             // ini ketika attack powernya lbih besar dibandingkan armornya powernya maka
             // arrmor langsung pecah dan habis
-            if (sisaDamage >= this.armor.defense) {
-                sisaDamage = sisaDamage - this.armor.defense;
-                System.out.println(this.nama + " Kehilangan Armor Sebesar " + this.armor.defense);
+            if (sisaDamage >= this.armor.getdefenseArmor()) {
+                sisaDamage = sisaDamage - this.armor.getdefenseArmor();
+                System.out.println(this.nama + " Kehilangan Armor Sebesar " + this.armor.getdefenseArmor());
 
-                this.armor.defense = 0;
+                armor.setdefenseArmor(0);
 
             } else {
                 // katika armor masih bisa menahan total damage dan damage habis di kurangi oleh
                 // total defense
-                this.armor.defense = this.armor.defense - sisaDamage;
+                this.armor.setdefenseArmor (this.armor.getdefenseArmor() - sisaDamage);
                 System.out.println(this.nama + " Armor Kehilangan Defense Sebesar " + sisaDamage);
 
                 sisaDamage = 0;
@@ -79,7 +79,7 @@ public class Player {
 
         }
 
-        System.out.println("Sisa Armor " + this.armor.defense);
+        System.out.println("Sisa Armor " + this.armor.getdefenseArmor());
         System.out.println("Sisa HP " + this.nama + " : " + this.health);
         System.out.println("\n");
 

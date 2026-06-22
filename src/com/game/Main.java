@@ -43,6 +43,7 @@ public class Main {
         // fitur bertempur
         System.out.println("\nPERTEMPURAN DI MULAI!! \n");
 
+        //ini error tidak bekerja jika player di ganti 
         while (Player1.health > 0 && Player2.health > 0) {
             Player1.Serangan(Player2);
             Player2.ShowPlayer();

@@ -99,4 +99,23 @@ public class Player {
         System.out.println("====================");
 
     }
+
+     
+    public static void pertempuran(Player PemainA, Player PemainB){
+        while (PemainA.gethealthPlayer() > 0 && PemainB.gethealthPlayer() > 0) {
+            PemainA.Serangan(PemainB);
+            PemainB.ShowPlayer();
+            if (PemainB.gethealthPlayer() <= 0) {
+                System.out.println("PEMENANGNYA ADALAH PLAYER 1!!");
+                break;
+
+            }
+            PemainB.Serangan(PemainA);
+            if (PemainA.gethealthPlayer() <= 0) {
+                System.out.println("PEMENANGNYA ADALAH PLAYER 2!!");
+                break;
+            }
+
+        }
+    }
 }

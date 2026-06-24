@@ -43,22 +43,9 @@ public class Main {
         // fitur bertempur
         System.out.println("\nPERTEMPURAN DI MULAI!! \n");
 
-        //ini error tidak bekerja jika player di ganti 
-        while (Player1.gethealthPlayer() > 0 && Player2.gethealthPlayer() > 0) {
-            Player1.Serangan(Player2);
-            Player2.ShowPlayer();
-            if (Player2.gethealthPlayer() <= 0) {
-                System.out.println("PEMENANGNYA ADALAH PLAYER 1!!");
-                break;
-
-            }
-            Player2.Serangan(Player1);
-            if (Player1.gethealthPlayer() <= 0) {
-                System.out.println("PEMENANGNYA ADALAH PLAYER 2!!");
-                break;
-            }
-
-        }
+        //Pertempuran di mulai 
+        Player.pertempuran (Player1, Player2);
+       
 
 
 

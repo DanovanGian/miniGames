@@ -40,7 +40,7 @@ public class Player {
 
     void Serangan(Player musuh) {
 
-        System.out.println(this.nama + " Menyerang " + musuh.nama + " sebesar " + senjata.getdamageWeapon());
+        System.out.println(getnamaPlayer() + " Menyerang " + musuh.getnamaPlayer() + " sebesar " + senjata.getdamageWeapon());
         musuh.defance(this.senjata.getdamageWeapon());
 
     }

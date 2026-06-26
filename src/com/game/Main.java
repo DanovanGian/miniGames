@@ -41,7 +41,9 @@ public class Main {
         Player2.ShowPlayer();
 
         // fitur bertempur
-        System.out.println("\nPERTEMPURAN DI MULAI!! \n");
+        System.out.println("\n===========================");
+        System.out.println("**PERTEMPURAN DI MULAI!!** ");
+        System.out.println("===========================\n");
 
         //Pertempuran di mulai 
         Player.pertempuran (Player1, Player2);

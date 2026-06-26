@@ -14,35 +14,38 @@ public class Player {
         this.health = health;
     }
 
-    //getter 
-    public String getnamaPlayer(){return nama;}
-    public int getlevelPlayer(){return level;}
-    public double gethealthPlayer(){return health;}
+    // getter
+    public String getnamaPlayer() {
+        return nama;
+    }
 
-    //setter
-    public void setnamaPlayer(String nama){
+    public int getlevelPlayer() {
+        return level;
+    }
+
+    public double gethealthPlayer() {
+        return health;
+    }
+
+    // setter
+    public void setnamaPlayer(String nama) {
         this.nama = nama;
     }
-    public void setlevelPlayer(int level){
+
+    public void setlevelPlayer(int level) {
         this.level = level;
     }
-    public void sethealthPlayer(double health){
+
+    public void sethealthPlayer(double health) {
         this.health = health;
     }
-
+    //method untuk equip senjata kepada player 
     void pakaiSenjata(Weapon senjata) {
         this.senjata = senjata;
     }
-
+    //method untuk equip armor kepada player 
     void pakaiArmor(Armor armor) {
         this.armor = armor;
-    }
-
-    void Serangan(Player musuh) {
-
-        System.out.println(getnamaPlayer() + " Menyerang " + musuh.getnamaPlayer() + " sebesar " + senjata.getdamageWeapon());
-        musuh.defance(this.senjata.getdamageWeapon());
-
     }
 
     void defance(double attackPower) {
@@ -62,7 +65,7 @@ public class Player {
             } else {
                 // katika armor masih bisa menahan total damage dan damage habis di kurangi oleh
                 // total defense
-                this.armor.setdefenseArmor (this.armor.getdefenseArmor() - sisaDamage);
+                this.armor.setdefenseArmor(this.armor.getdefenseArmor() - sisaDamage);
                 System.out.println(this.nama + " Armor Kehilangan Defense Sebesar " + sisaDamage);
 
                 sisaDamage = 0;
@@ -75,13 +78,20 @@ public class Player {
             System.out.println(this.nama + " Menerima Damage Langsung Sebesar " + sisaDamage);
 
             sisaDamage = 0;
-        
 
         }
 
         System.out.println("Sisa Armor " + this.armor.getdefenseArmor());
         System.out.println("Sisa HP " + this.nama + " : " + this.health);
         System.out.println("\n");
+
+    }
+
+    void Serangan(Player musuh) {
+
+        System.out.println(
+                getnamaPlayer() + " Menyerang " + musuh.getnamaPlayer() + " sebesar " + senjata.getdamageWeapon());
+        musuh.defance(this.senjata.getdamageWeapon());
 
     }
 
@@ -100,8 +110,7 @@ public class Player {
 
     }
 
-     
-    public static void pertempuran(Player PemainA, Player PemainB){
+    public static void pertempuran(Player PemainA, Player PemainB) {
         while (PemainA.gethealthPlayer() > 0 && PemainB.gethealthPlayer() > 0) {
             PemainA.Serangan(PemainB);
             PemainB.ShowPlayer();

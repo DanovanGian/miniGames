@@ -115,13 +115,14 @@ public class Player {
             PemainA.Serangan(PemainB);
             PemainB.ShowPlayer();
             if (PemainB.gethealthPlayer() <= 0) {
-                System.out.println("PEMENANGNYA ADALAH PLAYER 1!!");
+                System.out.println("PEMENANGNYA ADALAH "+ PemainA.getnamaPlayer());
                 break;
 
             }
             PemainB.Serangan(PemainA);
+            PemainA.ShowPlayer();
             if (PemainA.gethealthPlayer() <= 0) {
-                System.out.println("PEMENANGNYA ADALAH PLAYER 2!!");
+                System.out.println("PEMENANGNYA ADALAH " + PemainB.getnamaPlayer());
                 break;
             }
 

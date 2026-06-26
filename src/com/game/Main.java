@@ -47,7 +47,8 @@ public class Main {
 
         //Pertempuran di mulai 
         Player.pertempuran (Player1, Player2);
-       
+       //fitur selanjutnya adalah membaut setiap penambahan level akan menambahkan health sebanyak 10 hp 
+       //sekarang yang menjad pertanyaan adalah kenaikan level di pengaruhi oleh apa 
 
 
 

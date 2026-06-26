@@ -66,7 +66,8 @@ public class Player {
                 // katika armor masih bisa menahan total damage dan damage habis di kurangi oleh
                 // total defense
                 this.armor.setdefenseArmor(this.armor.getdefenseArmor() - sisaDamage);
-                System.out.println(this.nama + " Armor Kehilangan Defense Sebesar " + sisaDamage);
+                System.out.println("Armor " + this.nama + " Kehilangan Defense Sebesar " + sisaDamage);
+                System.out.println("Sisa Defnse Armor : " );
 
                 sisaDamage = 0;
 
